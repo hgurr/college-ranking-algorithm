@@ -1,8 +1,15 @@
 ########################################################################
-## Title: 
+## Title: College Ranking for Affluent International Female Students
 ## Author: https://github.com/hgurr
 ## Date: 04-06-2024
 ## Description:
+##   Builds a custom college ranking tailored to affluent international 
+##   female students seeking high-quality, coeducational institutions 
+##   (i.e., not historically women-only colleges). The analysis includes:
+##     1) Selection of variables aligned with the target group's preferences
+##     2) Construction of a weighted ranking algorithm
+##     3) Generation of three ranking models to test sensitivity
+##     4) Face validity assessment and sensitivity comparison
 ##
 ##   Based on: college_sample.csv dataset.
 ########################################################################
