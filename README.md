@@ -30,15 +30,26 @@ A total of three models were created to examine sensitivity to variable exclusio
 - **Packages**:
   - `readr` for CSV handling
 
-### Key Variables:
-- `FAMINC`
-- `UGDS_NRA`
-- `D150_4_NRA`
-- `WOMENONLY`
+### Key Variables
+
+| Variable Name     | Description                                                                 |
+|-------------------|-----------------------------------------------------------------------------|
+| `FAMINC`          | Numeric variable indicating the mean family income of enrolled students; used as a proxy for institutional affluence and prestige |
+| `UGDS_NRA`        | Proportion variable representing the share of undergraduate students who are international (nonresident aliens) |
+| `D150_4_NRA`      | Proportion variable indicating the 4-year graduation rate for international students |
+| `WOMENONLY`       | Categorical variable indicating whether the institution is historically women-only (`1` = Yes, `0` = No) |
+
+---
 
 ### Filtering Criteria
-To focus on non-historcally women-only colleges, the dataset was filtered to **exclude** historically women-only colleges (WOMENONLY == No) and **include** only the non-historically women-only colleges ((WOMENONLY == Yes).
-- `uni` (created subset of `college_sample.csv`)
+
+To focus exclusively on **coeducational institutions**, the dataset was filtered using the `WOMENONLY` variable to exclude historically women-only colleges.
+
+The resulting filtered dataset is stored in a new data frame called **`uni`**, which includes only the following institution type:
+
+- Not historically women-only (`WOMENONLY == 0`)
+
+This subset (`uni`) was used for all ranking models, sensitivity analyses, and face validity assessments tailored to affluent international female students.
 
 ---
 
@@ -86,7 +97,7 @@ Each variable was assigned a weight based on its relevance to the target group:
 
 4. **Install Required Packages**
    ```bash
-   install.packages(("readr""))
+   install.packages("readr")
 5. **Run the Script**
 
 Ensure college_sample.csv is in your working directory.
