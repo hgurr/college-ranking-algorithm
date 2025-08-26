@@ -3,7 +3,7 @@
 ## Abstract
 - **Target Group**: Affluent international female students seeking high-quality, coeductional (non-historically women-only) institutions in the United States.
 - **Conclusion**: 
-- **Tools**: R, RStudio, readr
+- **Tools**: R, RStudio, `readr`
 - **Skills**: Data filtering, ranking algorithm design, weighting models, face validity assessment, sensitivity analysis
 
 ---
