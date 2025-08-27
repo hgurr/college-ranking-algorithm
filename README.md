@@ -65,15 +65,13 @@ Each variable was assigned a weight based on its relevance to the target group:
 | Proportion Intl. Students (`UGDS_NRA`) | 35%    |
 | Grad Rate Intl. Students (`D150_4_NRA`) | 35%    |
 | Non-Historical Women’s College (`WOMENONLY`) | 5%     |
-
-#### Justification
-
+##### Justification
 - **WOMENONLY**: Weighted at 5% because only 38 out of 2,109 institutions were historically women-only — exclusion is necessary but not a dominant factor.
 - **FAMINC**: Acts as a proxy for institutional prestige and socioeconomic status, which may align with affluent students' expectations.
 - **D150_4_NRA**: Reflects institutional support and success of international students.
 - **UGDS_NRA**: Indicates cultural diversity and global inclusiveness — highly important to international students.
 
-# Model 1 
+## Model 1 — Full Weighting
 1. University of Phoenix-Arizona
 2. Purdue University-Main Campus
 3. University of Illinois at Urbana-Champaign
@@ -100,7 +98,7 @@ Each variable was assigned a weight based on its relevance to the target group:
 24. School of Visual Arts
 25. University of Wisconsin-Madison
 
-# Model 2 - Excluding 
+## Model 2 — Excluding `FAMINC`
 1. University of Phoenix-Arizona
 2. Purdue University-Main Campus
 3. University of Illinois at Urbana-Champaign
@@ -127,7 +125,7 @@ Each variable was assigned a weight based on its relevance to the target group:
 24. Georgia Institute of Technology-Main Campus
 25. Cornell University
 
-# Model 3 - Excluding 
+## Model 3 — Excluding `UGDS_NRA`
 1. University of Phoenix-Arizona
 2. Purdue University-Main Campus
 3. University of Illinois at Urbana-Champaign
